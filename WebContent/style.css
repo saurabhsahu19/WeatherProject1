@@ -1,0 +1,50 @@
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.data-table {
+	text-align: center;
+}
+
+.data-table table {
+	display: inline-block;
+	border: 1px solid #eee;	
+}
+
+.data-table td,.data-table th {
+	width: 200px;
+	text-align: center;
+	border: 1px solid #eee;
+	font-size: 16px;
+}
+
+.city-filter {
+	margin-left: 15px;	
+}
+
+.city-filter label {
+	font-weight: 600;
+	font-size: 14px;
+}
+	
+.city-filter select {
+	width: 200px;
+	font-size: 14px;
+}

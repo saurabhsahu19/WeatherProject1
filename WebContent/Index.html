@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Weather app</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script   src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script   src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+		
+		<script src="script.js"></script>
+	</head>
+	<body>
+	 	
+	<div id="chart" class="chart">
+	</div>
+	<div class="city-filter">
+		<label>Select city</label>
+		<select id="selectCity" onchange="loadWeather()">
+		  <option value="London">London</option>
+		  <option value="Delhi">Delhi</option>
+		  <option value="Bangalore">Bangalore</option>
+		  <option value="Chennai">Chennai</option>
+		</select>	
+	</div>		
+		
+	<div id="dtable" class="data-table">
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Day
+					</th>
+					<th>
+						Min
+					</th>
+					<th>
+						Max
+					</th>
+				</tr>
+			</thead>
+			<tbody id="dtableBody">
+				
+			</tbody>
+		</table>
+	</div>
+	
+	
+	</body>
+</html>
